@@ -12,6 +12,5 @@ type Region = {
 export type Continent = {
   id: string;
   name: string;
-  series: string;
   regions: Region[];
 };
