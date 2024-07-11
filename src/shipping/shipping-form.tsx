@@ -52,10 +52,10 @@ export function ShippingForm({ continents }: ShippingFormProps) {
       }}
     >
       <FormItem isRequired errorMessages={fieldErrors?.continentId?._errors}>
-        <FormItemLabel>Continent</FormItemLabel>
+        <FormItemLabel>Province</FormItemLabel>
         <Select
           name="continentId"
-          placeholder="Continent"
+          placeholder="Province"
           value={continentId}
           onValueChange={(value) => {
             setContinentId(value);
@@ -75,10 +75,10 @@ export function ShippingForm({ continents }: ShippingFormProps) {
       </FormItem>
       <div className="flex gap-2">
         <FormItem isRequired errorMessages={fieldErrors?.regionId?._errors}>
-          <FormItemLabel>Region</FormItemLabel>
+          <FormItemLabel>District</FormItemLabel>
           <Select
             name="regionId"
-            placeholder="Region"
+            placeholder="District"
             disabled={!continentId}
             value={regionId}
             onValueChange={(value) => {
