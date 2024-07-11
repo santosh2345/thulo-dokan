@@ -13,7 +13,7 @@ export const shippingInfoSchema = z.object({
       value.replaceAll(' ', '').replaceAll('(', '').replaceAll(')', ''),
     )
     .refine(
-      (value) => validator.isMobilePhone(value),
+      (value) => validator.isMobilePhone(value, ['ne-NP']),
       ERROR_MESSAGES.invalid('Phone'),
     ),
   email: z.string().email(ERROR_MESSAGES.invalid('E-mail')),
