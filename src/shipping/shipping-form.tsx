@@ -129,7 +129,7 @@ export function ShippingForm({ continents }: ShippingFormProps) {
           name="phone"
           type="tel"
           mask="_"
-          format="+1 (###) #### ###"
+          format="+977 ##### #####"
         />
         <FormItemErrorMessage />
       </FormItem>
